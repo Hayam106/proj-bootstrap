@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.css">
+
+</head>
+<body > 
+<!-- icon social-->
+<div class="position-fixed end-0 top-50 translate-middle-y d-flex flex-column gap-4 p-3 z-3 mx-3 ">
+  <a href="#" class="btn btn-light rounded-circle d-flex align-items-center justify-content-center opacity-75 border-1 border-dark border"
+     style="width: 65px; height: 65px; ">
+    <i class="fab fa-linkedin-in fs-2"></i>
+  </a>
+  <a href="#" class="btn btn-light rounded-circle d-flex align-items-center justify-content-center opacity-75 border-1 border-dark border"
+     style="width: 65px; height: 65px; ">
+<i class="fas fa-envelope fs-2"></i>
+  </a>
+  <a href="#" class="btn btn-light rounded-circle d-flex align-items-center justify-content-center opacity-75 border-1 border-dark border"
+     style="width: 65px; height: 65px;">
+
+<img src="../proj-bootstrap/img/x-twitter-brands-solid.svg" >
+  </a>
+  <a href="#" class="btn btn-light rounded-circle d-flex align-items-center justify-content-center opacity-75 border-1 border-dark border"
+     style="width: 65px; height: 65px; ">
+<i class="fab fa-telegram-plane fs-2"></i>  </a>
+</div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light z-5 d-flex fixed-top  opacity-75 " style="height:60px">
+  <div class="container-fluid">
+ <a class="navbar-brand m-0" href="#">
+      <img src="../proj-bootstrap/img/logo2.jpg" style="width: 50px;" class="rounded">
+    </a>
+
+    <!-- larg-->
+    <span class="fw-bold text-dark d-lg-none position-fixed top-0 p-3 start-50 translate-middle-x text-center">
+      ArchiLegends
+    </span>
+    <!--smoll-->
+    <span class="fw-bold text-dark d-none d-lg-block">
+      ArchiLegends
+    </span>
+
+    <button class="navbar-toggler border-1 shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+
+    <div class="collapse navbar-collapse bg-light  rounded" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-auto  ">
+        <li class="nav-item"><a class="nav-link text-dark px-4  " href="#">
+       <span class="hovcol">H</span>ome</a></li>
+  <li class="nav-item"><a class="nav-link text-dark px-4 " href="#">
+     <span class="hovcol">A</span>rchitects</a></li>
+  <li class="nav-item"><a class="nav-link text-dark px-4 " href="#"> <span class="hovcol">L</span>andmarks</a></li>
+  <li class="nav-item"><a class="nav-link text-dark px-4 " href="#">Gallery</a></li>
+  <li class="nav-item"><a class="nav-link text-dark px-4 " href="#">Contact</a></li>
+        <li class="nav-item dropdown  ">
+          <a class="nav-link dropdown-toggle text-dark px-4  border border-2 border-black rounded d-inline-block" href="#" role="button" data-bs-toggle="dropdown"><span class="hovcol">E</span>xplore</a>
+          <ul class="dropdown-menu  ">
+             <li><a class="dropdown-item" href="#architects">Famous Architects</a></li>
+    <li><a class="dropdown-item" href="#landmarks">Iconic Buildings</a></li>
+    <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+    <li><a class="dropdown-item" href="#philosophy">Design Philosophy</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-lg-3 mt-3 mt-lg-0 p-2 ">
+        <input class="form-control me-2 border-dark " type="search" placeholder="Search">
+        <button class="btn btn-dark me-2 " type="submit">Search</button>
+        <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- /////////////////////////// -->
+<div class="modal fade" id="loginModal" aria-labelledby="loginModalLabel" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+          </div>
+          <div class="form-check form-switch mb-3 ">
+  <input class="form-check-input  bg-primary" type="checkbox" id="rememberMe" checked>
+  <label class="form-check-label " for="rememberMe">Remember me</label>
+</div>
+    <div class="modal-footer d-flex justify-content-between  " >
+        <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-dark">Login</button>
+      </div>
+        </form>
+      </div>
+      
+  
+      
+    </div>
+  </div>
+</div>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../proj-bootstrap/img/iltun-huseynli-OH7GkUqiuZk-unsplash.jpg" alt="Los Angeles" class="d-block" style="width:100%;height: 740px;">
+      <div class="carousel-caption text-white p-3 rounded " style="background-color: rgba(0, 0, 0, 0.6);">
+        <h3>Los Angeles – The Walt Disney Concert Hall</h3>
+        <p>A stainless steel icon of modern architecture.</p>
+         <button class="btn btn-outline-light m-2">Explore More</button>
+      </div>
+    </div>
+    <div class="carousel-item " >
+      <img src="../proj-bootstrap/img/jacob-christiansen-hw4lYNne6jo-unsplash.jpg" alt="Chicago" class="d-block" style="width:100%;height: 740px; ">
+      <div class="carousel-caption text-white p-3 rounded" style="background-color: rgba(0, 0, 0, 0.6);">
+        <h3 class="">Chicago – The Willis Tower </h3>
+        <p  class="">Formerly known as Sears Tower, this skyscraper defines the skyline.</p>
+         <button class="btn btn-outline-light m-2">Explore More</button>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="../proj-bootstrap/img/marc-olivier-jodoin--HIiNFXcbtQ-unsplash.jpg" alt="New York" class="d-block" style="width:100% ;height: 740px;">
+      <div class="carousel-caption text-white p-3 rounded" style="background-color: rgba(0, 0, 0, 0.6);">
+        <h3>New York – The Empire State Building</h3>
+        <p>One of the most iconic landmarks in the world.</p>
+         <button class="btn btn-outline-light m-2">Explore More</button>
+      </div>  
+    </div>
+     <div class="carousel-item " >
+      <img src="../proj-bootstrap/img/frances-gunn-c9z9RlCh0Zo-unsplash.jpg" alt="Toronto" class="d-block" style="width:100%;height: 740px;">
+      <div class="carousel-caption text-white p-3 rounded" style="background-color: rgba(0, 0, 0, 0.6);">
+        <h3 class="">Toronto – CN Tower</h3>
+        <p  class="">Touching the sky in the heart of Canada.</p>
+         <button class="btn btn-outline-light m-2">Explore More</button>
+      </div> 
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+<!-- Section: Welcome Message -->
+<div class="welcome-page bg-light">
+<section class="text-start p-5  " id="welcome">
+  <h1 class=" gradient-text " >Welcome to ArchiLegends</h1>
+  <p class="lead  ">
+    Discover the stories behind the world's most iconic architectural masterpieces and the brilliant minds who designed them.<br>
+    From timeless landmarks to visionary creators, ArchiLegends celebrates the beauty of architecture around the globe.
+  </p>
+  <a href="#architects" class="btn btn-outline-dark  mt-3">Explore Now</a>
+</section>
+</div>
+<hr>
+<!-- /////////////////////////////////////////////////////////////////////////-->
+ <div class="bg-dark">
+<h2 class="text-center fw-bold  p-4 gradient-text"  >Masterpieces of Architectural Eras</h2>
+ </div>
+<div class="accordion " id="accordionExample">
+
+  <!-- Ancient Architecture -->
+  <div class="accordion-item ">
+    <h2 class="accordion-header shadow">
+      <button class="accordion-button collapsed  shadow  fs-5"  
+      type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+         Islamic Golden Age
+      </button>
+    </h2>
+    <div id="collapse1" class="accordion-collapse collapse   " data-bs-parent="#accordionExample">
+      <div class="accordion-body  text-dark p-4 " style="background-color: #f5f9ff;">
+Graceful domes rise into the sky, wrapped in layers of geometric precision and calm symmetry. Light dances through intricately carved windows, casting quiet
+ patterns across stone floors. Every element feels purposeful — a meeting between soul and structure. 
+   </div>
+  </div>
+  </div>
+  <!-- Medieval Architecture -->
+  <div class="accordion-item">
+    <h2 class="accordion-header shadow ">
+      <button class="accordion-button collapsed  shadow fs-5"
+       type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+        Gothic & Victorian Styles
+      </button>
+    </h2>
+    <div id="collapse2" class="accordion-collapse collapse   " data-bs-parent="#accordionExample">
+      <div class="accordion-body   text-dark  p-4" style="background-color: #f5f9ff;" >
+Soaring spires and pointed arches stretch upward, as if architecture itself is longing for the heavens. Shadows rest beneath stained-glass windows,
+ and ornate stonework whispers stories of old. The beauty here isn’t in simplicity — it’s in the drama. 
+     </div>
+    </div>
+  </div>
+
+  <!-- Renaissance & Baroque -->
+  <div class="accordion-item">
+    <h2 class="accordion-header shadow">
+      <button class="accordion-button collapsed  shadow fs-5"  type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+        Ottoman & Eastern Touches
+      </button>
+    </h2>
+    <div id="collapse3" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+      <div class="accordion-body  text-dark p-4 " style="background-color: #f5f9ff;">
+Curves flow with intention, echoing the rhythm of ancient cities. From grand courtyards to slender minarets, every space feels both regal and intimate.
+ A world where stone breathes, and walls carry centuries of silent elegance. 
+   </div>
+  </div>
+
+</div>
+</div>
+
+
+<hr>
+
+
+
+
+<!--  ///////////////////////////////////////////////////////////////////////-->
+ <!--  Section 1 -->
+<section  id="architectTranslateAr" class="bg-light p-4 rounded mb-5">
+  <div class="bg-dark rounded ">
+  <h4 class="text-center fw-bold  py-3 gradient-text">Translate Architectural Quote to arabic</h4>
+  </div>
+  <p class="text-center text-muted fst-italic mb-4">
+    "Architecture begins where engineering ends."
+  </p>
+
+  <!-- زر النسخ والليبل -->
+  <div class="row mb-2 align-items-center">
+    <div class="d-flex justify-content-start mb-2">
+      <button id="copyBtnArch"
+              class="btn btn-outline-dark"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Copy to clipboard"
+              onclick="copyWithFeedback('textAreaArch', 'copyBtnArch')">
+        <i class="fas fa-copy me-1"></i> Copy
+      </button>
+    </div>
+
+    <div class="col-md-9 text-md-start text-center">
+      <label for="textAreaArch" class="form-label m-0">Try translating this <span class="text-primary fs-6"> famous quote</span> :</label>
+    </div>
+  </div>
+
+  <!-- Textarea -->
+  <textarea id="textAreaArch" class="form-control mb-3" rows="3">Architecture begins where engineering ends.</textarea>
+</section>
+
+
+<!--  Section 2 -->
+<section id="architectTranslateDe" class="bg-light p-4 rounded mb-5">
+    <div class="bg-dark rounded ">
+
+  <h4 class="text-center fw-bold text-bg-dark py-3  gradient-text ">Translation of architectural quote to German</h4>
+    </div>
+  <p class="text-center text-muted fst-italic mb-4">
+    "Architecture begins where engineering ends."
+  </p>
+
+  <!-- زر النسخ  -->
+  <div class="row mb-2 align-items-center">
+    <div class="d-flex justify-content-start mb-2">
+      <button id="copyBtnArch"
+              class="btn btn-outline-dark"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Copy to clipboard"
+              onclick="copyWithFeedback('textAreaArch', 'copyBtnArch')">
+        <i class="fas fa-copy me-1"></i> Copy
+      </button>
+    </div>
+
+    <div class="col-md-9 text-md-start text-center">
+      <label for="textAreaArch" class="form-label m-0">Try translating this <span class="text-primary fs-6"> famous quote</span> :</label>
+    </div>
+  </div>
+
+  <!-- Textarea -->
+  <textarea id="textAreaArch" class="form-control mb-3" rows="3">Architecture begins where engineering ends.</textarea>
+</section>
+
+
+<!-- //////////////////////////////////////////////////// -->
+
+<section class="bg-image d-flex align-items-center justify-content-center text-white"
+         style="background-image: url('../proj-bootstrap/img/08_ZHA_The-New-World_Photo-Virgile-Simon-Bertrand-1816x1080.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                height: 400px;">
+</section>
+<!-- /////////////////////////////// -->
+<section class=" bg-light">
+  <div class="container-fluid py-4">
+    <div class="bg-dark">
+ <h2 class="text-center  gradient-text  mb-5 fw-bold p-4 w-auto   "style="" >Famous Landmarks</h2>
+    </div>
+    <div class="row g-5 mx-4 justify-content-around">
+      <!--  الكارت 8  -->
+      <div class="col-12  col-lg-4">
+        <div class="card position-relative overflow-hidden my-card border-0 shadow   ">
+          <div class="Famous card-img-container">
+            <img src="../proj-bootstrap/img/valencia-1049389_1280.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+          </div>
+          <div class="card-body position-relative " style="height: 120px;">
+            <div class="d-flex justify-content-between align-items-end ">
+              <div class="text-start w-75 position-absolute top-0 start-0">
+                <h5 class="card-title mx-4 mt-2">Santiago Calatrava </h5>
+                <p class="card-text mx-4 ">City of Arts and Sciences
+</p>
+              </div>
+              <a href="#" class="btn btn-outline-dark position-absolute top-50 end-0 mx-4">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////-->
+      <div class="col-12  col-lg-4">
+        <div class="card position-relative overflow-hidden my-card border-0 shadow ">
+          <div class="Famous card-img-container">
+            <img src="../proj-bootstrap/img/0022222.jpeg" class="card-img-top px-2" style="height: 350px;" alt="...">
+          </div>
+          <div class="card-body position-relative" style="height: 120px;">
+            <div class="d-flex justify-content-between align-items-end ">
+              <div class="text-start w-75 position-absolute top-0 start-0">
+                <h5 class="card-title mx-4 mt-2">Zaha Hadid</h5>
+                <p class="card-text mx-4">
+Heydar Aliyev Centre in Baku, Azerbaijan</p>
+              </div>
+              <a href="#" class="btn btn-outline-dark position-absolute top-50 end-0 mx-4 ">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////-->
+      <div class="col-12  col-lg-4">
+        <div class="card position-relative overflow-hidden my-card border-0 shadow ">
+          <div class="Famous card-img-container">
+            <img src="../proj-bootstrap/img/keming-tan-hGgM1F_Mq6g-unsplash.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+          </div>
+          <div class="card-body position-relative" style="height: 120px;">
+            <div class="d-flex justify-content-between align-items-end ">
+              <div class="text-start w-75 position-absolute top-0 start-0">
+                <h5 class="card-title mx-4 mt-2"> Moshe Safdie</h5>
+                <p class="card-text mx-4">Marina Bay Sands</p>
+              </div>
+              <a href="#" class="btn btn-outline-dark position-absolute top-50 end-0 mx-4 ">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////-->
+      <div class="col-12  col-lg-4">
+        <div class="card position-relative overflow-hidden my-card border-0 shadow ">
+          <div class="Famous card-img-container">
+            <img src="../proj-bootstrap/img/alev-takil-eDMQgYbKhiU-unsplash.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+          </div>
+          <div class="card-body position-relative" style="height: 120px;">
+            <div class="d-flex justify-content-between align-items-end ">
+              <div class="text-start w-75 position-absolute top-0 start-0">
+                <h5 class="card-title mx-4 mt-2">Ricardo Velázquez Bosco</h5>
+                <p class="card-text mx-4">Palacio de Cristal</p>
+              </div>
+              <a href="#" class="btn btn-outline-dark position-absolute top-50 end-0 mx-4 ">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////-->
+     <div class="col-12  col-lg-4">
+        <div class="card position-relative overflow-hidden my-card border-0 shadow ">
+          <div class="Famous card-img-container">
+            <img src="../proj-bootstrap/img/05555.webp" class="card-img-top px-2" style="height: 350px;" alt="...">
+          </div>
+          <div class="card-body position-relative" style="height: 120px;">
+            <div class="d-flex justify-content-between align-items-end ">
+              <div class="text-start w-75 position-absolute top-0 start-0">
+                <h5 class="card-title mx-4 mt-2">Ben Van Berkel</h5>
+                <p class="card-text mx-4">Raffles City in Hangzhou, China – a sustainable urban complex designed by Ben van Berkel.</p>
+              </div>
+              <a href="#" class="btn btn-outline-dark position-absolute top-50 end-0 mx-4 ">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////-->
+      <div class="col-12  col-lg-4">
+        <div class="card position-relative overflow-hidden my-card border-0 shadow ">
+          <div class="Famous card-img-container">
+            <img src="../proj-bootstrap/img/05555.webp" class="card-img-top px-2 object-fit-cover" style="height: 350px;" alt="...">
+          </div>
+          <div class="card-body position-relative" style="height: 120px;">
+            <div class="d-flex justify-content-between align-items-end ">
+              <div class="text-start w-75 position-absolute top-0 start-0">
+                <h5 class="card-title mx-4 mt-2"> I. M. Pei</h5>
+                <p class="card-text mx-4">Louvre Museum (Glass Pyramid) </p>
+              </div>
+              <a href="#" class="btn btn-outline-dark position-absolute top-50 end-0 mx-4 ">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////-->
+      <div class="col-12  col-lg-4">
+        <div class="card position-relative overflow-hidden my-card border-0 shadow ">
+          <div class="Famous card-img-container">
+            <img src="../proj-bootstrap/img/freysteinn-g-jonsson-BXmIQhSMI7M-unsplash2.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+          </div>
+          <div class="card-body position-relative" style="height: 120px;">
+            <div class="d-flex justify-content-between align-items-end ">
+              <div class="text-start w-75 position-absolute top-0 start-0">
+                <h5 class="card-title mx-4 mt-2">Vivian Lee</h5>
+                <p class="card-text mx-4">
+OCT Clubhouse in Shenzhen, designed by Vivian Lee of Richard Meier & Partners.</p>
+              </div>
+              <a href="#" class="btn btn-outline-dark position-absolute top-50 end-0 mx-4 ">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////-->
+      <div class="col-12  col-lg-4">
+        <div class="card position-relative overflow-hidden my-card border-0 shadow ">
+          <div class="Famous card-img-container">
+            <img src="../proj-bootstrap/img/1000_F_356703717_KwwdYG7MXCwV6TORIMxKUBN1lb0o1BTB.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+          </div>
+          <div class="card-body position-relative" style="height: 120px;">
+            <div class="d-flex justify-content-between align-items-end ">
+              <div class="text-start w-75 position-absolute top-0 start-0">
+                <h5 class="card-title mx-4 mt-2"> Reinier de Graaf</h5>
+                <p class="card-text mx-4">
+Hospital of the Future, Washington, D.C.</p>
+              </div>
+              <a href="#" class="btn btn-outline-dark position-absolute top-50 end-0 mx-4 ">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////-->
+    </div>
+  </div>
+</section>
+<!-- ////////////////////////////////////////////////////// -->
+
+<section class="bg-image d-flex align-items-center justify-content-center text-white"
+         style="background-image: url('../proj-bootstrap/img/building-102840_1280.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                height: 400px;">
+</section>
+
+<hr class="border-dark my-4">
+
+<!-- /////////////////////////////////////////// -->
+<section class=" bg-light  ">
+<div class="container-fluid  ">
+   <div class="bg-dark">
+ <h2 class="text-center  gradient-text  mb-5 fw-bold p-4 w-100   ">Famous Architects</h2>
+    </div>
+  <div class="row g-4 p-5 ">
+
+<div class="  col-12 gap-2 col-lg-4">
+  <div class="card-container position-relative mx-auto rounded"
+     style="width: 400px; height: 450px; overflow: hidden;">
+
+  <!--  الصورة الخلفية -->
+  <img src="img/mark-boss-YoDlrVtyl6o-unsplash.jpg"
+       class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover "
+       style="z-index: 0;"
+       alt="Background Image">
+
+  <!-- ومتحرك overlay ثابت -->
+  <div class="position-absolute top-0 start-0 w-100 h-100"
+       style="background-color: rgba(62, 61, 61, 0.332); z-index: 1;"></div>
+       <div class="overlay-gradient position-absolute top-0 start-0 w-100 h-100" style="z-index: 1;"></div>
+
+
+  <!--  المحتوى المتحرك كله في container واحد -->
+  <div class="card-inner position-relative z-2 h-100 w-100"
+       style="transition: transform 0.4s ease;">
+
+   
+    <div class="text-white p-3 h-100 d-flex flex-column justify-content-between">
+      <div>
+        <h5 >Ray and Maria Stata Center, Cambridge</h5>
+        <small>Built in 2024</small>
+      </div>
+      <!-- معلومات المصمم -->
+    <div class="position-absolute bottom-0 start-0 end-0 p-3 text-white text-left z-3" >
+      <h5 class="mb-1">Frank Gehry</h5>
+      <small>Canada</small>
+    </div>
+    </div>
+
+    <!--  الصورة الصغيرة -->
+    <img src="img/Frank Gehry2.jpg"
+         class="rounded-circle border border-white shadow position-absolute"
+         style="width: 100px; height: 100px; bottom:15%; left: 15px;">
+  </div>
+</div>
+
+</div>
+  
+<!-- /////////////////////////////////////// -->
+<div class="col-12 gap-2 col-lg-4">
+  <div class="card-container position-relative mx-auto rounded"
+     style="width: 400px; height: 450px; overflow: hidden;">
+
+  <!--  الصورة الخلفية -->
+  <img src="img/jayanth-muppaneni-z_De4o7rMTk-unsplash.jpg"
+       class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+       style="z-index: 0;"
+       alt="Background Image">
+
+  <!-- ومتحرك overlay ثابت -->
+  <div class="position-absolute top-0 start-0 w-100 h-100"
+       style="background-color: rgba(62, 61, 61, 0.332); z-index: 1;"></div>
+       <div class="overlay-gradient position-absolute top-0 start-0 w-100 h-100" style="z-index: 1;"></div>
+
+  <!--  المحتوى المتحرك كله في container واحد -->
+  <div class="card-inner position-relative z-2 h-100 w-100"
+       style="transition: transform 0.4s ease;">
+
+    <div class="text-white p-3 h-100 d-flex flex-column justify-content-between">
+      <div>
+        <h5 class="fw-bold"> Lotus Temple </h5>
+        <small>Built in 1986</small>
+      </div>
+      <!-- معلومات المصمم -->
+    <div class="position-absolute bottom-0 start-0 end-0 p-3 text-white  z-3" >
+      <h5 class="mb-1">Fariborz Sahba</h5>
+      <small>Spanish</small>
+    </div>
+    </div>
+
+    <!--  الصورة الصغيرة -->
+    <img src="img/Fariborzjpg.jpg"
+         class="rounded-circle border border-white shadow position-absolute"
+         style="width: 100px; height: 100px; bottom:15%; left: 15px;">
+  </div>
+</div>
+
+</div>
+<!-- /////////////////////////////////////////// -->
+<div class="col-12 gap-2 col-lg-4">
+ <div class="card-container position-relative mx-auto rounded"
+     style="width: 400px; height: 450px; overflow: hidden; ">
+
+  <!--  الصورة الخلفية -->
+ <img src="img/ZHA_CECEP_low-14.jpg"
+       class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+       style="z-index: 0;"
+       alt="Background Image">
+
+  <!-- ومتحرك overlay ثابت -->
+  <div class="position-absolute  top-0 start-0 w-100 h-100"
+       style="background-color: rgba(62, 61, 61, 0.332); z-index: 1;"></div>
+       <div class="overlay-gradient position-absolute top-0 start-0 w-100 h-100" style="z-index: 1;"></div>
+
+  <!--  المحتوى المتحرك كله في container واحد -->
+  <div class="card-inner position-relative z-2 h-100 w-100"
+       style="transition: transform 0.4s ease;">
+
+    <div class="text-white p-3 h-100 d-flex flex-column justify-content-between">
+      <div>
+        <h5 >Alisher Navoi International Scientific Research Centre</h5>
+        <small> Built in 2024</small>
+      </div>
+      <!-- معلومات المصمم -->
+    <div class="position-absolute bottom-0 start-0 end-0 p-3 text-white  z-3" >
+      <h5 class="mb-1">Zaha Hadid</h5>
+      <small>Iraqi-British</small>
+    </div>
+    </div>
+
+    <!--  الصورة الصغيرة -->
+    <img src="img/zahhhhh.jpg"
+         class="rounded-circle border border-white shadow position-absolute"
+         style="width: 100px; height: 100px; bottom:15%; left: 15px;">
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</section>
+
+<!-- ////////////////////////////////////// -->
+ 
+
+    <hr class="border-dark my-4">
+
+<!-- //////////////////////////////////////////////////////////////////////////////////-->
+<section class=" bg-light mb-4">
+  <div class="container position-relative w-75 p-4 ">
+        <h3 class="text-center fw-bold my-5 text-primary">Masterpieces of Architecture </h3>
+
+      <div class="mb-4 ">
+
+    <div class="position-relative overflow-hidden mx-4 custom-card d-none d-lg-flex flex-row shadow-lg rounded " style="height: 320px; ">
+      
+      <img src="img/abu-dhabi-4030586_1280.jpg"
+           class="position-absolute top-0 end-0 w-50 h-100  card-img-bg"
+           alt="Poster Image">
+      
+    
+      <div class=" bg-white card-shape1 p-4 d-flex flex-row " >
+        <div>
+<h5 class="fw-bold">Sheikh Zayed Grand Mosque: A Modern Masterpiece</h5>
+<p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>Thu, July 10th 2020</p>
+          <div class="line bg-primary my-2"></div>
+<p class="w-50">With its white domes and grand scale, this mosque blends traditional Islamic architecture with modern design. 
+  We explore its symbolism and cultural impact in the UAE and beyond.</p>        
+        <div class="d-flex gap-2 flex-wrap mt-2">
+          <button class="btn btn-outline-dark btn-sm"><i class="fas fa-microphone me-1"></i> Podcast</button>
+          <button class="btn btn-outline-dark btn-sm"><i class="fas fa-clock me-1"></i> 55 mins</button>
+          <button class="btn btn-outline-primary btn-sm"><i class="fas fa-play me-1"></i> Play Episode</button>
+        </div>
+      </div>
+      </div>
+ 
+    </div>
+    <!-- ////////////////////////////////1///////////////////////////////////////////// -->
+   <div class="mb-4">
+<div class="position-relative overflow-hidden custom-card d-none d-lg-flex flex-row-reverse mx-4 shadow-lg rounded " style="height: 320px;">
+      
+ <img src="img/chris-reyem-l_h4zrtTnwE-unsplash.jpg"        
+    class="position-absolute top-0 start-0 w-50 h-100 card-img-bg object-fit-cover"
+           alt="Poster Image">
+      
+      <div class=" bg-white card-shape2 p-4 d-flex flex-row-reverse " >
+         <div class="d-flex flex-column  align-items-end">
+     
+
+<h5 class="fw-bold">Alter Markt, Potsdam: Echoes of Baroque Grandeur</h5>
+<p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>Sat, March 14th 2020</p>
+ <div class="line bg-primary my-2"></div>
+<p class="w-50 text-end">Once the royal heart of Potsdam, Alter Markt is home to palaces, churches, and neoclassical beauty. This episode explores how the square has been restored after WWII and its architectural charm today.</p>
+
+
+
+        <div class="d-flex gap-2 flex-wrap mt-2">
+          <button class="btn btn-outline-dark btn-sm"><i class="fas fa-microphone me-1"></i> Podcast</button>
+          <button class="btn btn-outline-dark btn-sm"><i class="fas fa-clock me-1"></i> 55 mins</button>
+          <button class="btn btn-outline-primary btn-sm"><i class="fas fa-play me-1"></i> Play Episode</button>
+        </div>
+      </div>
+</div>
+</div>
+      <!-- ////////////////////////////2///////////////////// -->
+          <div class="mb-4">
+<div class="position-relative overflow-hidden custom-card d-none flex-row d-lg-flex mx-4 rounded shadow-lg " style="height: 320px;">
+      
+ <img src="img/hossein-nasr-cgLPVVmaMq4-unsplash.jpg"           class="position-absolute overflow-hidden top-0 end-0 w-50 h-100 object-fit-cover card-img-bg"
+           alt="Poster Image">
+      
+      <div class="  bg-white card-shape1 p-4 d-flex flex-row  text-start ">
+        <div>
+ 
+<h5 class="fw-bold">Azadi Tower: Gateway to Tehran</h5>
+<p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>Sun, August 23rd 2020</p>
+          <div class="line bg-primary my-2"></div>
+
+<p class="w-50">Formerly known as Shahyad Tower, this monument blends modernist lines with Persian architectural heritage. Built in 1971, it marks Tehran’s western gateway and houses an underground museum beneath its iconic arch.</p>
+
+
+        <div class=" gap-2  mt-2">
+          <button class="btn btn-outline-dark btn-sm"><i class="fas fa-microphone me-1"></i> Podcast</button>
+          <button class="btn btn-outline-dark btn-sm"><i class="fas fa-clock me-1"></i> 55 mins</button>
+          <button class="btn btn-outline-primary btn-sm"><i class="fas fa-play me-1"></i> Play Episode</button>
+        </div>
+      </div>
+</div>
+</div>
+      <!-- /////////////////////////3///////////////////////////// -->
+          <div class="mb-4">
+<div class="position-relative overflow-hidden custom-card d-none d-lg-flex flex-row mx-4 rounded shadow-lg" style="height: 320px;">
+      
+ <img src="img/palacio3.jpg"           class="position-absolute  w-50 h-100 card-img-bg"
+           alt="Poster Image">
+      
+      <div class=" bg-white card-shape2 p-4 d-flex flex-row-reverse  " >
+        <div class="d-flex flex-column  align-items-end">
+      
+<h5 class="fw-bold">Palacio de Bellas Artes: Mexico’s Cultural Jewel</h5>
+<p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>Tue, Nov 17th 2020</p>
+          <div class="line bg-primary my-2 "></div>
+
+<p class="w-50 text-end">Known for its stained-glass curtain and Art Nouveau design, this palace is both a theater and a museum. We explore its history and role in Mexico's cultural identity.</p>
+
+
+        <div class="gap-2 mt-2">
+          <button class="btn btn-outline-dark btn-sm"><i class="fas fa-microphone me-1"></i> Podcast</button>
+          <button class="btn btn-outline-dark btn-sm"><i class="fas fa-clock me-1"></i> 55 mins</button>
+          <button class="btn btn-outline-primary btn-sm"><i class="fas fa-play me-1"></i> Play Episode</button>
+        </div>
+      </div>
+</div>
+</div>
+          </div>
+      <!-- //////////////////////////////4///////////////////////////// -->
+<!-- card-smoll-->
+<div class="card card-smoll  border-0 shadow-sm d-block d-md-block d-lg-none my-4">
+  
+  <!-- الصورة -->
+  <div style="height: 200px; overflow: hidden;">
+    <img src="img/abu-dhabi-4030586_1280.jpg"
+         class="w-100 h-100 object-fit-cover rounded" alt="Poster Image">
+  </div>
+
+  <!-- النص -->
+  <div class="p-4" >
+    <h5 class="fw-bold">Podcast Title</h5>
+    <p class="text-muted mb-2 p-2"><i class="fas fa-calendar-alt me-2"></i>Mon, May 25th 2020</p>
+          <div class="line    bg-primary"></div>
+
+    <p class="p-2 mt-2" style="height: 150px; overflow-y: auto;">With its white domes and grand scale, this mosque blends traditional Islamic architecture with modern design. Located in Abu Dhabi, it stands as one of the world’s largest and most visually stunning mosques. The mosque features 82 domes, over a thousand columns, and reflective pools that amplify its serene beauty. Inside, visitors find the world’s largest chandelier and the biggest hand-knotted carpet. Built to unite people of all cultures and beliefs, it welcomes millions annually. The white marble and intricate floral details symbolize purity and peace. This episode explores its architectural features, artistic elements, and deep cultural symbolism. It’s not just a mosque—it’s a message of harmony and inspiration.</p>
+    
+  
+  </div>
+</div>
+<!-- card-smoll-->
+<div class="card card-smoll  border-0 shadow-sm d-block d-md-block d-lg-none my-4">
+  
+  <div style="height: 200px; overflow: hidden;">
+    <img src="img/chris-reyem-l_h4zrtTnwE-unsplash.jpg"
+         class="w-100 h-100 object-fit-cover rounded" alt="Poster Image">
+  </div>
+
+  <div class="p-4" >
+    <h5 class="fw-bold">Podcast Title</h5>
+    <p class="text-muted mb-2 p-2"><i class="fas fa-calendar-alt me-2"></i>Mon, May 25th 2020</p>
+          <div class="line position-absolute mb-4  bg-primary"></div>
+
+    <p class="p-2 my-2" style="height: 150px; overflow-y: auto;">Once the royal heart of Potsdam, Alter Markt has long been a center of political power and architectural splendor. Surrounded by neoclassical buildings, palaces, and churches, the square echoes the grandeur of Prussian heritage. Severely damaged in World War II, it underwent extensive reconstruction that revived its historic charm. From the restored St. Nicholas Church to the Brandenburg State Parliament, each structure tells a story of resilience. Today, the square blends old and new—hosting cafes, events, and modern art installations. It serves not only as a reminder of Germany’s imperial past, but also as a vibrant public space. This episode dives into its layered history and cultural importance in European urban identity.</p>
+    
+  
+  </div>
+</div>
+<!--card-smoll-->
+<div class="card card-smoll border-0 shadow-sm d-block d-md-block d-lg-none my-4">
+  
+ <div style="height: 200px; overflow: hidden;">
+    <img src="img/hossein-nasr-cgLPVVmaMq4-unsplash.jpg"
+         class="w-100 h-100 object-fit-cover rounded" alt="Poster Image">
+  </div>
+
+
+  <div class="p-4" >
+    <h5 class="fw-bold">Podcast Title</h5>
+    <p class="text-muted mb-2 p-2"><i class="fas fa-calendar-alt me-2"></i>Mon, May 25th 2020</p>
+          <div class="line  bg-primary"></div>
+
+    <p class="p-2 my-2" style="height: 150px; overflow-y: auto;">Formerly known as Shahyad Tower, this monument is one of Tehran’s most recognizable landmarks. Built in 1971 to commemorate the 2,500th anniversary of the Persian Empire, its unique design fuses modernist elements with ancient Persian motifs. Standing 45 meters tall, the tower is clad in white marble and forms a gateway to the city’s west. Beneath it lies a cultural complex with museums, galleries, and an underground auditorium. Over decades, the tower has witnessed revolutions, rallies, and national celebrations. Its geometric curves evoke ancient arches, while its minimalist aesthetic nods to modern architecture. This episode explores its political, cultural, and symbolic roles in Iran’s complex narrative. It's more than a monument—it's a mirror of national identity.<p>
+    
+  
+  </div>
+</div>
+<!-- card-smoll-->
+<div class="card card-smoll  border-0 shadow-sm d-block d-md-block d-lg-none my-4">
+  
+
+  <div style="height: 200px; overflow: hidden;">
+    <img src="img/palacio3.jpg"
+         class="w-100 h-100 object-fit-cover rounded" alt="Poster Image">
+  </div>
+
+ 
+  <div class="p-4" >
+    <h5 class="fw-bold">Podcast Title</h5>
+    <p class="text-muted mb-2 p-2"><i class="fas fa-calendar-alt me-2"></i>Mon, May 25th 2020</p>
+          <div class="line   bg-primary"></div>
+
+    <p class="p-2 my-2" style="height: 150px; overflow-y: auto;">Known as Palacio de Bellas Artes, this architectural gem is a crown jewel of Mexico City. Completed in 1934, it showcases a rare blend of Art Nouveau and Art Deco styles, topped with a dramatic domed roof of orange and yellow tiles. Inside, visitors are greeted by stunning murals by Rivera, Orozco, and Siqueiros. The palace functions both as a grand theater and an important museum of the arts. It hosts operas, ballet performances, and exhibitions that celebrate Mexican heritage. The famous stained-glass stage curtain, made of crystal, depicts the Valley of Mexico and is a masterpiece in itself. Beyond aesthetics, it has played a pivotal role in the cultural evolution of the nation. Through this episode, we delve into its artistic depth, architectural influence, and enduring legacy in Latin America..</p>
+    
+  
+  </div>
+</div>
+  </div>
+  </div>
+  
+</section>
+<!-- ///////////////////////////////////////////////// -->
+
+<section class="py-5 bg-light text-center" id="social">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5 gradient-text">Connect with Us</h2>
+    
+  
+    <div class="row justify-content-center g-4">
+      
+      <!-- Instagram -->
+      <div class="col-12 col-md-12 col-lg-3">
+        <div class="shadow-lg p-4 rounded h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="fw-bold mb-3">Instagram</h5>
+        <a href="https://www.instagram.com/">   <img src="img/instagram.png" alt="Instagram Icon" class="img-fluid mb-4" style="width: 60px;"></a>
+            <p class="mb-0">Explore snapshots of iconic architectural masterpieces from around the world.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pinterest -->
+      <div class="col-12 col-md-12 col-lg-3">
+        <div class="shadow-lg p-4 rounded h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="fw-bold mb-3">Pinterest</h5>
+         <a href="https://www.pinterest.com/">  <img src="img/pinterest.svg" alt="Pinterest Icon" class="img-fluid mb-4" style="width: 60px;"></a>
+            <p class="mb-0">Get inspired by our curated boards filled with timeless designs and ideas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- X (Twitter) -->
+      <div class="col-12 col-md-12 col-lg-3">
+        <div class="shadow-lg p-4 rounded h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="fw-bold mb-3">X (Twitter)</h5>
+          <a href="https://x.com/">  <img src="img/x-logo.png" alt="X Icon" class="img-fluid mb-4" style="width: 60px;"></a>
+            <p class="mb-0">Stay updated with the latest trends and stories in global architecture.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Behance -->
+      <div class="col-12 col-md-12 col-lg-3">
+        <div class="shadow-lg p-4 rounded h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="fw-bold mb-3">Behance</h5>
+          <a href="https://www.behance.net/"> <img src="img/vecteezy_behance-3d-icon_29129374.png" alt="Behance Icon" class="img-fluid mb-4" style="width:60px;"></a>
+            <p class="mb-0">Browse detailed case studies of our architectural concepts and visual work.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--  -->
+<footer class="bg-dark text-light pt-3 pb-3 mt-5">
+  <section class="container-fluid p-3 text-center ">
+
+    <div class="row row-cols-1 row-cols-md-1  row-cols-lg-3 g-4 mb-3 ">
+      
+      <!-- العمود الأول -->
+      <div class="col">
+        <div class="d-flex flex-row align-items-center border-bottom border-top border-1 border-light p-4 d-flex justify-content-center gap-3 mb-3">
+        <img src="img/pexels-alesiakozik-6016752.jpg" alt="Right Icon"
+          class="rounded-circle border-top border-bottom border-light p-1 mb-2" style="width: 100px; height: 100px;">
+                    <span class="fw-bold text-uppercase fs-5">ArchiLegends</span>
+          
+        </div>
+        <p class="mb-1 p-foot">We believe architecture is more than buildings.</p>
+          <p class="mb-1 p-foot">It reflects culture, emotion, and identity.</p>
+          <p class="mb-2 p-foot">Our designs tell timeless stories.</p>
+      </div>
+
+      <!-- العمود الثاني -->
+      <div class="col">
+        <div class="d-flex flex-row align-items-center border-bottom border-top border-1 border-light p-4 d-flex justify-content-center  gap-3 mb-3  mx-auto">
+        <img src="img/1febd0e27aad1ec00153950a1e6bd223.jpg" alt="Right Icon"
+          class="rounded-circle border-top border-bottom border-light p-1 mb-2" style="width: 100px; height: 100px;">
+                    <span class="fw-bold text-uppercase fs-5">ArchiLegends</span>
+
+        </div>
+        <p class="mb-1 p-foot">Celebrating the icons of global architecture.</p>
+          <p class="mb-1 p-foot">From sketches to concrete masterpieces.</p>
+          <p class="mb-2 p-foot">Where legends are reimagined.</p>
+      </div>
+
+      <!-- العمود الثالث -->
+      <div class="col">
+        <div class="d-flex flex-row align-items-center border-bottom border-top border-1 border-light p-4 d-flex justify-content-center gap-3 mb-3">
+        <img src="img/pexels-mikael-blomkvist-8960994.jpg" alt="Right Icon"
+           class="rounded-circle border-top border-bottom border-light  p-1 mb-2" style="width: 100px; height: 100px;">
+                    <span class="fw-bold text-uppercase fs-5">ArchiLegends</span>
+          
+        </div>
+        <p class="mb-1 p-foot">Discover world-famous architectural gems.</p>
+          <p class="mb-1 p-foot">Stories behind iconic forms and structures.</p>
+          <p class="mb-2 p-foot">A gallery of human creativity.</p>
+      </div>
+
+    </div>
+
+    <small class="d-block text-center border-bottom border-top border-1 border-light py-4 gradient-text ">© 2025 ArchiLegends. All rights reserved.</small>
+
+  </section>
+</footer>
+<!-- ////////////////////////////////////////////////////////// -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>

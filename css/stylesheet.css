@@ -1,0 +1,191 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+  text-transform:capitalize;
+}
+
+ .icon-fixed:hover{
+  opacity: 1!important;
+ }
+ .nav-link:hover .hovcol {
+color: #8c78ff;
+font-weight: 700;
+}
+.dropdown-menu:hover .dropdown-item:hover{
+  background-color: #8c78ff;
+}
+.gradient-text {
+  background: linear-gradient(to top, #0351bf, #80abff ,#fb59b2bb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accordion-item button{
+  font-size: 17px;
+   background: linear-gradient( to top, #0351bf, #80abff ,#ff008cbb );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+/* /////////////////////////////// */
+
+ .Famous::before{
+content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #030b139b;
+    
+}
+ .Famous:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 2s;
+
+}
+
+ .Famous::after{
+content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-color: #030b139b;
+  
+}
+ .Famous:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 2s;
+
+}
+
+
+/* ///////////////////////////////////////////// */
+
+.overlay-fixed {
+  background-color: rgba(0, 0, 0, 0.256); /* لون خفيف */
+
+}
+
+
+.architect-card {
+  transition:  0.4s ease;
+
+
+}
+.architect-card:hover .pressure{
+  padding-top: 20%;
+  padding-bottom: 20%;
+   width: 100%;
+   height: 100%;
+   z-index: 2;
+}
+
+.architect-card:hover {
+  transform: scale(0.95); 
+}
+
+.architect-card .overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0.5;
+  transition:  0.4s ease;
+}
+
+.architect-card:hover .overlay {
+  opacity: 1;
+}
+
+/* /////////////////////////// */
+.card-container:hover{
+  transform: scale(0.92);
+   transition:  1s ease;
+}
+.card-container:hover .card-inner {
+  transform: scale(0.85);
+}
+
+
+.overlay-gradient {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.515), transparent 90%);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.card-container:hover 
+.overlay-gradient {
+  opacity: 1;
+}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////*/
+.line{
+  width: 10%;
+  height: 1%;
+  transition: 1s;
+}
+.custom-card{
+  margin-bottom: 5%;
+}
+.custom-card:hover .line{
+width: 150px;
+transition: 2s;
+}
+/* 
+ */
+.insta-gradient {
+  background: radial-gradient(circle at 30% 30%,  #d62976, #962fbf, #4f5bd5);
+}
+
+.card-smoll:hover .line{
+width: 25%;
+transition: 2s;
+}
+
+.card-Poster:hover .Poster{
+  transform: scale(0.95);
+  transition: 1s;
+
+}
+
+
+.custom-card:hover .card-img-bg {
+  transform: scale(1.1); 
+    transition:  1s ease;
+
+}
+
+
+.card-shape1 {
+  width: 100%;
+  clip-path: polygon(0 0%, 70% 0, 60% 100%, 0 100%);
+   background: linear-gradient(to right, rgba(188, 206, 232, 0.515), transparent 90%);
+}
+.card-shape2 {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 45% 100%);
+  width: 100%;
+    background: linear-gradient(to left, rgba(188, 206, 232, 0.515), transparent 90%);
+}
+
+/* ///////// */
+
+.p-foot:hover{
+color: #80abff;
+cursor: pointer;
+}
