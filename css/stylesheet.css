@@ -7,7 +7,9 @@ box-sizing: border-box;
 body{
   text-transform:capitalize;
 }
-
+.navbarTaper{
+  height: 60px;
+}
  .icon-fixed:hover{
   opacity: 1!important;
  }
@@ -188,4 +190,69 @@ transition: 2s;
 .p-foot:hover{
 color: #80abff;
 cursor: pointer;
+}
+/* /////////////////////////// */
+/* .my-card,.card-img-container{
+  height: 350px;
+} */
+
+.card-img-container img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body{
+  height: 120px;
+}
+
+/* /////////////////////// */
+
+  /* على الشاشات الصغيرة (موبايل أقل من 400px) */
+@media (max-width: 1000px) {
+  html {
+  font-size: calc(1.05rem + 0.5vw);
+}.navbarTaper{
+  height: auto;
+}
+  .carousel-item img {
+    height: 100vh !important; /* الصورة نفسها هتاخد طول الشاشة */
+    object-fit: cover; /* تمنع التشويه */
+  }
+  .my-card,.card-container  {
+    height: 100vh!important;     /* الكارت كله طول الشاشة */
+    width: 90vw!important;  
+    margin: auto;
+  }
+.card-inner{
+  width: 100%!important;
+  height: 100%!important;
+}
+.card-inner h5, .card-inner small{
+font-size: 50px;
+}
+.card-inner img{
+ width: 40vw!important; 
+ height: 20vh!important;
+}
+
+  .card-img-container img {
+    height: 90vh!important;
+    width: 100%!important;
+    object-fit: cover;
+  }
+
+  .card-body {
+    height: 10vh!important;    
+  } .Famous:hover::after,.Famous:hover::before,.card-container:hover,.architect-card:hover{
+      width: 0%;
+    height: 0%;
+     transform: scale(01); 
+  }.card-smoll{
+    width: 100vw;   
+}
+
+
+
+
 }

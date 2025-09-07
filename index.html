@@ -31,7 +31,7 @@
 </div>
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light z-5 d-flex fixed-top  opacity-75 " style="height:60px">
+<nav class="navbar navbarTape navbar-expand-lg navbar-light bg-light z-5 d-flex fixed-top  opacity-75 " >
   <div class="container-fluid">
  <a class="navbar-brand m-0" href="#">
       <img src="../proj-bootstrap/img/logo2.jpg" style="width: 50px;" class="rounded">
@@ -115,7 +115,6 @@
   </div>
 </div>
 
-<!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
   <!-- Indicators/dots -->
@@ -123,43 +122,45 @@
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
   </div>
   
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../proj-bootstrap/img/iltun-huseynli-OH7GkUqiuZk-unsplash.jpg" alt="Los Angeles" class="d-block" style="width:100%;height: 740px;">
-      <div class="carousel-caption text-white p-3 rounded " style="background-color: rgba(0, 0, 0, 0.6);">
+      <img src="../proj-bootstrap/img/iltun-huseynli-OH7GkUqiuZk-unsplash.jpg" alt="Los Angeles" class="d-block w-100 img-fluid" style="object-fit: cover; height: 100vh;">
+      <div class="carousel-caption text-white p-3 rounded" style="background-color: rgba(0, 0, 0, 0.6);">
         <h3>Los Angeles – The Walt Disney Concert Hall</h3>
         <p>A stainless steel icon of modern architecture.</p>
-         <button class="btn btn-outline-light m-2">Explore More</button>
+        <button class="btn btn-outline-light m-2">Explore More</button>
       </div>
     </div>
-    <div class="carousel-item " >
-      <img src="../proj-bootstrap/img/jacob-christiansen-hw4lYNne6jo-unsplash.jpg" alt="Chicago" class="d-block" style="width:100%;height: 740px; ">
-      <div class="carousel-caption text-white p-3 rounded" style="background-color: rgba(0, 0, 0, 0.6);">
-        <h3 class="">Chicago – The Willis Tower </h3>
-        <p  class="">Formerly known as Sears Tower, this skyscraper defines the skyline.</p>
-         <button class="btn btn-outline-light m-2">Explore More</button>
-      </div> 
-    </div>
+
     <div class="carousel-item">
-      <img src="../proj-bootstrap/img/marc-olivier-jodoin--HIiNFXcbtQ-unsplash.jpg" alt="New York" class="d-block" style="width:100% ;height: 740px;">
+      <img src="../proj-bootstrap/img/jacob-christiansen-hw4lYNne6jo-unsplash.jpg" alt="Chicago" class="d-block w-100 img-fluid" style="object-fit: cover; height: 100vh;">
+      <div class="carousel-caption text-white p-3 rounded" style="background-color: rgba(0, 0, 0, 0.6);">
+        <h3>Chicago – The Willis Tower </h3>
+        <p>Formerly known as Sears Tower, this skyscraper defines the skyline.</p>
+        <button class="btn btn-outline-light m-2">Explore More</button>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="../proj-bootstrap/img/marc-olivier-jodoin--HIiNFXcbtQ-unsplash.jpg" alt="New York" class="d-block w-100 img-fluid" style="object-fit: cover; height: 100vh;">
       <div class="carousel-caption text-white p-3 rounded" style="background-color: rgba(0, 0, 0, 0.6);">
         <h3>New York – The Empire State Building</h3>
         <p>One of the most iconic landmarks in the world.</p>
-         <button class="btn btn-outline-light m-2">Explore More</button>
-      </div>  
+        <button class="btn btn-outline-light m-2">Explore More</button>
+      </div>
     </div>
-     <div class="carousel-item " >
-      <img src="../proj-bootstrap/img/frances-gunn-c9z9RlCh0Zo-unsplash.jpg" alt="Toronto" class="d-block" style="width:100%;height: 740px;">
+
+    <div class="carousel-item">
+      <img src="../proj-bootstrap/img/frances-gunn-c9z9RlCh0Zo-unsplash.jpg" alt="Toronto" class="d-block w-100 img-fluid" style="object-fit: cover; height: 100vh;">
       <div class="carousel-caption text-white p-3 rounded" style="background-color: rgba(0, 0, 0, 0.6);">
-        <h3 class="">Toronto – CN Tower</h3>
-        <p  class="">Touching the sky in the heart of Canada.</p>
-         <button class="btn btn-outline-light m-2">Explore More</button>
-      </div> 
+        <h3>Toronto – CN Tower</h3>
+        <p>Touching the sky in the heart of Canada.</p>
+        <button class="btn btn-outline-light m-2">Explore More</button>
+      </div>
     </div>
   </div>
   
@@ -171,6 +172,7 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
+
 
 
 <!-- Section: Welcome Message -->
@@ -326,14 +328,14 @@ Curves flow with intention, echoing the rhythm of ancient cities. From grand cou
     <div class="bg-dark">
  <h2 class="text-center  gradient-text  mb-5 fw-bold p-4 w-auto   "style="" >Famous Landmarks</h2>
     </div>
-    <div class="row g-5 mx-4 justify-content-around">
+    <div class="row g-5 mx-1 my-2 p-1 justify-content-around">
       <!--  الكارت 8  -->
       <div class="col-12  col-lg-4">
-        <div class="card position-relative overflow-hidden my-card border-0 shadow   ">
+        <div class="card position-relative overflow-hidden my-card border-0 shadow  ">
           <div class="Famous card-img-container">
-            <img src="../proj-bootstrap/img/valencia-1049389_1280.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+            <img src="../proj-bootstrap/img/valencia-1049389_1280.jpg" class="card-img-top px-2"  alt="...">
           </div>
-          <div class="card-body position-relative " style="height: 120px;">
+          <div class="card-body position-relative " >
             <div class="d-flex justify-content-between align-items-end ">
               <div class="text-start w-75 position-absolute top-0 start-0">
                 <h5 class="card-title mx-4 mt-2">Santiago Calatrava </h5>
@@ -350,9 +352,9 @@ Curves flow with intention, echoing the rhythm of ancient cities. From grand cou
       <div class="col-12  col-lg-4">
         <div class="card position-relative overflow-hidden my-card border-0 shadow ">
           <div class="Famous card-img-container">
-            <img src="../proj-bootstrap/img/0022222.jpeg" class="card-img-top px-2" style="height: 350px;" alt="...">
+            <img src="../proj-bootstrap/img/0022222.jpeg" class="card-img-top px-2"  alt="...">
           </div>
-          <div class="card-body position-relative" style="height: 120px;">
+          <div class="card-body position-relative" >
             <div class="d-flex justify-content-between align-items-end ">
               <div class="text-start w-75 position-absolute top-0 start-0">
                 <h5 class="card-title mx-4 mt-2">Zaha Hadid</h5>
@@ -369,9 +371,9 @@ Heydar Aliyev Centre in Baku, Azerbaijan</p>
       <div class="col-12  col-lg-4">
         <div class="card position-relative overflow-hidden my-card border-0 shadow ">
           <div class="Famous card-img-container">
-            <img src="../proj-bootstrap/img/keming-tan-hGgM1F_Mq6g-unsplash.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+            <img src="../proj-bootstrap/img/keming-tan-hGgM1F_Mq6g-unsplash.jpg" class="card-img-top px-2"  alt="...">
           </div>
-          <div class="card-body position-relative" style="height: 120px;">
+          <div class="card-body position-relative">
             <div class="d-flex justify-content-between align-items-end ">
               <div class="text-start w-75 position-absolute top-0 start-0">
                 <h5 class="card-title mx-4 mt-2"> Moshe Safdie</h5>
@@ -387,9 +389,9 @@ Heydar Aliyev Centre in Baku, Azerbaijan</p>
       <div class="col-12  col-lg-4">
         <div class="card position-relative overflow-hidden my-card border-0 shadow ">
           <div class="Famous card-img-container">
-            <img src="../proj-bootstrap/img/alev-takil-eDMQgYbKhiU-unsplash.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+            <img src="../proj-bootstrap/img/alev-takil-eDMQgYbKhiU-unsplash.jpg" class="card-img-top px-2" alt="...">
           </div>
-          <div class="card-body position-relative" style="height: 120px;">
+          <div class="card-body position-relative" >
             <div class="d-flex justify-content-between align-items-end ">
               <div class="text-start w-75 position-absolute top-0 start-0">
                 <h5 class="card-title mx-4 mt-2">Ricardo Velázquez Bosco</h5>
@@ -405,9 +407,9 @@ Heydar Aliyev Centre in Baku, Azerbaijan</p>
      <div class="col-12  col-lg-4">
         <div class="card position-relative overflow-hidden my-card border-0 shadow ">
           <div class="Famous card-img-container">
-            <img src="../proj-bootstrap/img/05555.webp" class="card-img-top px-2" style="height: 350px;" alt="...">
+            <img src="../proj-bootstrap/img/05555.webp" class="card-img-top px-2"  alt="...">
           </div>
-          <div class="card-body position-relative" style="height: 120px;">
+          <div class="card-body position-relative">
             <div class="d-flex justify-content-between align-items-end ">
               <div class="text-start w-75 position-absolute top-0 start-0">
                 <h5 class="card-title mx-4 mt-2">Ben Van Berkel</h5>
@@ -423,9 +425,9 @@ Heydar Aliyev Centre in Baku, Azerbaijan</p>
       <div class="col-12  col-lg-4">
         <div class="card position-relative overflow-hidden my-card border-0 shadow ">
           <div class="Famous card-img-container">
-            <img src="../proj-bootstrap/img/louvre-7146800_1280.jpg" class="card-img-top px-2 object-fit-cover" style="height: 350px;" alt="...">
+            <img src="../proj-bootstrap/img/louvre-7146800_1280.jpg" class="card-img-top px-2 object-fit-cover"  alt="...">
           </div>
-          <div class="card-body position-relative" style="height: 120px;">
+          <div class="card-body position-relative">
             <div class="d-flex justify-content-between align-items-end ">
               <div class="text-start w-75 position-absolute top-0 start-0">
                 <h5 class="card-title mx-4 mt-2"> I. M. Pei</h5>
@@ -441,14 +443,14 @@ Heydar Aliyev Centre in Baku, Azerbaijan</p>
       <div class="col-12  col-lg-4">
         <div class="card position-relative overflow-hidden my-card border-0 shadow ">
           <div class="Famous card-img-container">
-            <img src="../proj-bootstrap/img/freysteinn-g-jonsson-BXmIQhSMI7M-unsplash2.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+            <img src="../proj-bootstrap/img/2522225.jpg" class="card-img-top px-2"  alt="...">
           </div>
-          <div class="card-body position-relative" style="height: 120px;">
+          <div class="card-body position-relative" >
             <div class="d-flex justify-content-between align-items-end ">
               <div class="text-start w-75 position-absolute top-0 start-0">
                 <h5 class="card-title mx-4 mt-2">Vivian Lee</h5>
                 <p class="card-text mx-4">
-OCT Clubhouse in Shenzhen, designed by Vivian Lee of Richard Meier & Partners.</p>
+OCT Shenzhen Clubhouse, Richard Meier & Partners’ first building in China.</p>
               </div>
               <a href="#" class="btn btn-outline-dark position-absolute top-50 end-0 mx-4 ">View More</a>
             </div>
@@ -458,11 +460,11 @@ OCT Clubhouse in Shenzhen, designed by Vivian Lee of Richard Meier & Partners.</
 
       <!-- ////////////////////////////////////////-->
       <div class="col-12  col-lg-4">
-        <div class="card position-relative overflow-hidden my-card border-0 shadow ">
+        <div class="card  position-relative overflow-hidden my-card border-0 shadow ">
           <div class="Famous card-img-container">
-            <img src="../proj-bootstrap/img/1000_F_356703717_KwwdYG7MXCwV6TORIMxKUBN1lb0o1BTB.jpg" class="card-img-top px-2" style="height: 350px;" alt="...">
+            <img src="../proj-bootstrap/img/1000_F_356703717_KwwdYG7MXCwV6TORIMxKUBN1lb0o1BTB.jpg" class="card-img-top px-2" alt="...">
           </div>
-          <div class="card-body position-relative" style="height: 120px;">
+          <div class="card-body position-relative" >
             <div class="d-flex justify-content-between align-items-end ">
               <div class="text-start w-75 position-absolute top-0 start-0">
                 <h5 class="card-title mx-4 mt-2">Sydney Opera</h5>
@@ -497,7 +499,7 @@ Hospital of the Future, Washington, D.C.</p>
    <div class="bg-dark">
  <h2 class="text-center  gradient-text  mb-5 fw-bold p-4 w-100   ">Famous Architects</h2>
     </div>
-  <div class="row g-4 p-5 ">
+  <div class="row g-4 p-1 ">
 
 <div class="  col-12 gap-2 col-lg-4">
   <div class="card-container position-relative mx-auto rounded"
@@ -630,9 +632,10 @@ Hospital of the Future, Washington, D.C.</p>
     <hr class="border-dark my-4">
 
 <!-- //////////////////////////////////////////////////////////////////////////////////-->
-<section class=" bg-light mb-4">
-  <div class="container position-relative w-75 p-4 ">
-        <h3 class="text-center fw-bold my-5 text-primary">Masterpieces of Architecture </h3>
+<section class=" bg-light  w-100  py-2 ">
+          <h3 class="text-center fw-bold my-5 text-primary ">Masterpieces of Architecture </h3>
+
+  <div class="container position-relative w-75  article  p-2">
 
       <div class="mb-4 ">
 
@@ -737,8 +740,14 @@ Hospital of the Future, Washington, D.C.</p>
 </div>
 </div>
           </div>
+          </div>
+   </div>
+      </div>
+  </div>
       <!-- //////////////////////////////4///////////////////////////// -->
 <!-- card-smoll-->
+   <div class="container-fluid position-relative w-100    p-2">
+
 <div class="card card-smoll  border-0 shadow-sm d-block d-md-block d-lg-none my-4">
   
   <div style="height: 200px; overflow: hidden;">
@@ -809,13 +818,12 @@ Hospital of the Future, Washington, D.C.</p>
           <div class="line position-absolute mb-4   bg-primary"></div>
 
     <p class="p-2 my-2" style="height: 150px; overflow-y: auto;">Known as Palacio de Bellas Artes, this architectural gem is a crown jewel of Mexico City. Completed in 1934, it showcases a rare blend of Art Nouveau and Art Deco styles, topped with a dramatic domed roof of orange and yellow tiles. Inside, visitors are greeted by stunning murals by Rivera, Orozco, and Siqueiros. The palace functions both as a grand theater and an important museum of the arts. It hosts operas, ballet performances, and exhibitions that celebrate Mexican heritage. The famous stained-glass stage curtain, made of crystal, depicts the Valley of Mexico and is a masterpiece in itself. Beyond aesthetics, it has played a pivotal role in the cultural evolution of the nation. Through this episode, we delve into its artistic depth, architectural influence, and enduring legacy in Latin America..</p>
-    
+  </div>
   
   </div>
 </div>
   </div>
-  </div>
-  
+      </div>  
 </section>
 <!-- ///////////////////////////////////////////////// -->
 
