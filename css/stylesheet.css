@@ -216,11 +216,11 @@ cursor: pointer;
   height: auto;
 }
   .carousel-item img {
-    height: 100vh !important; /* الصورة نفسها هتاخد طول الشاشة */
+    height: 90vh !important; /* الصورة نفسها هتاخد طول الشاشة */
     object-fit: cover; /* تمنع التشويه */
   }
   .my-card,.card-container  {
-    height: 100vh!important;     /* الكارت كله طول الشاشة */
+    height: 50vh!important;     /* الكارت كله طول الشاشة */
     width: 90vw!important;  
     margin: auto;
   }
@@ -237,14 +237,12 @@ font-size: 50px;
 }
 
   .card-img-container img {
-    height: 90vh!important;
+    height: 40vh!important;
     width: 100%!important;
     object-fit: cover;
   }
 
-  .card-body {
-    height: 10vh!important;    
-  } .Famous:hover::after,.Famous:hover::before,.card-container:hover,.architect-card:hover{
+ .Famous:hover::after,.Famous:hover::before,.card-container:hover,.architect-card:hover{
       width: 0%;
     height: 0%;
      transform: scale(01); 
