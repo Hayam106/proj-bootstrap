@@ -192,9 +192,7 @@ color: #80abff;
 cursor: pointer;
 }
 /* /////////////////////////// */
-/* .my-card,.card-img-container{
-  height: 350px;
-} */
+
 
 .card-img-container img {
   height: 350px;
@@ -224,11 +222,11 @@ width: 100px; height: 100px;
   height: auto;
 }
   .carousel-item img {
-    height: 90vh !important; /* الصورة نفسها هتاخد طول الشاشة */
-    object-fit: cover; /* تمنع التشويه */
+    height: 90vh !important; 
+    object-fit: cover; 
   }
   .my-card,.card-container  {
-    height: 50vh!important;     /* الكارت كله طول الشاشة */
+    height: 50vh!important;    
     width: 90vw!important;  
     margin: auto;
   }
@@ -261,10 +259,8 @@ font-size: 50px;
 }footer img{
  width: 20vw!important; 
  height: 9vh!important;
-
   border: none;
 }.line{
- 
   height: 0.5%;}
 
 
