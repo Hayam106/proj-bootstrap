@@ -204,8 +204,16 @@ cursor: pointer;
 
 .card-body{
   height: 120px;
+}.card-smoll img{
+  height: 250px;
 }
 
+footer img{
+width: 100px; height: 100px;  
+
+  border-bottom:1px solid aliceblue ;
+  border-top: 1px solid aliceblue;
+}
 /* /////////////////////// */
 
   /* على الشاشات الصغيرة (موبايل أقل من 400px) */
@@ -232,8 +240,8 @@ cursor: pointer;
 font-size: 50px;
 }
 .card-inner img{
- width: 40vw!important; 
- height: 20vh!important;
+ width: 20vw!important; 
+ height: 10vh!important;
 }
 
   .card-img-container img {
@@ -248,6 +256,13 @@ font-size: 50px;
      transform: scale(01); 
   }.card-smoll{
     width: 100vw;   
+}.card-smoll img{
+  height: 30vh;
+}footer img{
+ width: 20vw!important; 
+ height: 9vh!important;
+
+  border: none;
 }
 
 
